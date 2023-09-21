@@ -1,0 +1,24 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Background stuffs here */
+@supports (animation-timeline: works)
+{
+    
+}
+
+.container__bg {
+    width: 100%;
+    height: 100%;
+     /* background-image: /* image here
+     /* animation: rotate_bg
+*/
+}
+
+/* end back ground stuffs */
+
+
