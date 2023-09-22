@@ -1,6 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap');
 
 
+header {
+    background-color: #333; /* Header background color /
+    color: #fff; / Text color /
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+*/}
+
+
+.container__logo {
+	/* display: flex; */
+	/* justify-content: center; */
+	/* align-items: center; */
+	height: 120px;
+}
+.logo-img {
+	position: relative;
+	content: url(/resources/images/logo_black.svg);
+	margin: 0 auto;
+	padding: 20px;
+	width: 280px;
+	font-size: 22px;
+	letter-spacing: 0.2em;
+	border-radius: 8px;
+	/* box-shadow: 0px 0px 10px rgba(82, 71, 83, 0.523); */
+}
+
+.logo-eye {
+    width: 40px;
+	height: 20px;
+	position: absolute;
+	transform: translateX(815px) translateY(-62px);
+	background-color: rgb(0, 0, 0);
+	border-radius: 55%;
+	animation: anim__blinkEye 16s infinite;
+}
+
+@keyframes anim__blinkEye {
+	0% {
+		width: 40px;
+		height: 20px;
+	}
+
+	28% {
+		width: 40px;
+		height: 20px;
+	}
+
+	29% {
+		width: 40px;
+		height: 2px;
+	}
+
+	30% {
+		width: 40px;
+		height: 20px;
+	}
+
+	65% {
+		width: 40px;
+		height: 20px;
+	}
+	66% {
+		width: 40px;
+		height: 2px;
+	}
+	67% {
+		width: 40px;
+		height: 20px;
+	}
+	87% {
+		width: 40px;
+		height: 20px;
+	}
+	88% {
+		width: 40px;
+		height: 2px;
+	}
+	89% {
+		width: 40px;
+		height: 20px;
+	}
+	/* 100% {
+
+		width: 40px;
+		height: 25px;
+
+	} */
+}
+
+
 *, *::after, *::before {
     box-sizing: border-box;
 }
