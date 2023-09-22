@@ -241,13 +241,22 @@ img {
 .menu__item {
 	padding-top: 0.5em;
 }
-
+:root {
+	--bar-width: 60px; 
+	--bar-width: 32px;
+	--bar-height: 4px;
+	--bar-height: 8px;
+	--hamburger-gap: 6px;
+	--foreground: #141413;
+	--background: black;
+	--hamburger-margin: 8px;
+	--animation-timing: 200ms ease-in-out;
+	--hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
 .hamburger-menu {
-	width: 120px;
-	height: 120px;
 	--x-width: calc(var(--hamburger-height) * 1.41421356237);
 	justify-items: center;
-	/* display: flex; */
+	display: flex;
 	flex-direction: column;
 	gap: var(--hamburger-gap);
 	width: max-content;
@@ -314,5 +323,4 @@ img {
 .hamburger-menu:has(input:checked) + .sidebar {
 	translate: 0;
 }
-
 /* end back ground stuffs */
