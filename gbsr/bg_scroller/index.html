@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Background rotate on scroll example</title>
+		<link
+			rel="stylesheet"
+			href="css/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="container__content">
+				<div class="card">
+					<div class="card__text-light">
+						We (or I, and.. I think(?) can't animate on scroll
+						without using either javascript (which we're not allowed
+						to), or an experimental feature of CSS (or possibly
+						animation timeline: scroll(?))
+					</div>
+
+					<div class="card__text-light">
+						Instead I will try to either do an animation with SVG
+						directly, or implement a parallax effect.
+					</div>
+
+					<div class="card__text">
+						(This card is incredibly long, just so we can see the
+						scrolling in action. If we get to that, that is. We
+						might.
+					</div>
+
+					<div class="card__text">
+						In the mean time, please enjoy this little glass effect.
+						It's stupidly simple to do, but it looks pretty cool.)
+					</div>
+
+					<div class="card__text-small">
+						The syntax for that is simply this:
+					</div>
+
+					<div class="card__text-highlight">
+						backdrop-filter: blur(10px);
+					</div>
+
+					<div class="card__text-light">
+						This creates this glass thing backdrop we see. We can of
+						course also use some other filter, and in fact, the MDN
+						has a full page on filters.
+					</div>
+
+					<div class="card__text-link">
+						<a
+							href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter"
+							target="_blank"
+							>https://developer.mozilla.org/en-US/docs/Web/CSS/filter</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
