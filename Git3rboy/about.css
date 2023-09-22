@@ -1,0 +1,52 @@
+body{
+	display: grid;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding-top: 5%;
+
+
+}
+
+.team-container{
+	display: grid;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 2fr;
+	justify-items: center;
+
+
+}
+
+
+.team-container > div{
+	display: grid;
+	width: 180px;
+	height: 180px;
+	background-color: rgb(25, 80, 80);
+	margin: 1em;
+	align-content: center;
+
+}
+
+.meet-title {
+
+	font-size: 40px;
+	font-weight: bold;
+}
+
+
+.dev-profile {
+
+width: 200px;
+height: 200px;
+
+
+}
+
+img {
+	width: 180px;
+	height: 180px;
+	object-fit: cover;
+}
