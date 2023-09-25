@@ -15,20 +15,25 @@ body{
 
 
 }
-
+/*
 .contact-header{
 	justify-items: center;
 	align-items: center;
-}
-
-
-
+} */
 
 .contact-title{
 	letter-spacing: 10px;
 	font-size: 4em;
 	text-align: right;
 	margin-right: 1em;
+	justify-items: left;
+	align-self: left;
+
+}
+
+.adress{
+	text-align: right;
+
 }
 
 .contact-form {
