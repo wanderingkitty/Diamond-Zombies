@@ -1,14 +1,19 @@
-body{
+body {
+
 	display: grid;
 	width: 100%;
 	height: auto;
 	margin: 0;
-	padding-top: 5%;
-
-
+	padding: 10% 5% 10% 5%;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-.team-container{
+section {
+	margin-bottom: 10%;
+}
+
+.team-container {
 	display: grid;
 	width: 100%;
 	display: grid;
@@ -20,33 +25,69 @@ body{
 }
 
 
-.team-container > div{
+.team-container>div {
 	display: grid;
-	width: 180px;
-	height: 180px;
-	background-color: rgb(25, 80, 80);
-	margin: 1em;
+	padding: 20px;
 	align-content: center;
+	justify-content: center;
+	width: 100%;
+	height: auto;
 
 }
 
 .meet-title {
 
-	font-size: 40px;
+	font-size: 60px;
 	font-weight: bold;
+	text-align: center;
+	width: 100%
 }
 
 
-.dev-profile {
-
-width: 200px;
-height: 200px;
-
-
-}
-
-img {
-	width: 180px;
-	height: 180px;
+.dev-profile img {
+	width: 300px;
+	height: 300px;
 	object-fit: cover;
 }
+
+
+.story-container {
+	width: 100%;
+	height: auto;
+	background-color: rgba(0, 0, 0, 0.016);
+	border-radius: 25px;
+	padding: 20px;
+	border: 1px solid rgba(102, 102, 102, 0.16);
+}
+
+.story :nth-child(1) {
+	text-align: center;
+	font-size: 50px;
+}
+
+hr {}
+
+.story :nth-child(2) {}
+
+
+
+.story {
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+
+
+}
+
+
+
+
+@media only screen and (max-width:600px) {
+	.team-container {
+		grid-template-columns: 1fr;
+
+	}
+}
+
+
+/* Jag vill lägga till hover effect så att när man lägger musen ska de bli en mörk skugga på bilden (Svart med opacity 35%) samt en title på namnet */
