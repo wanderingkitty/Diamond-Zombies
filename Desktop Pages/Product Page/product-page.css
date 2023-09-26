@@ -16,8 +16,9 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 2fr;
-    padding: 4% 10% 0 10%;
+    padding: 4% 5%;
     grid-gap: 4em;
+   
 
 }
 
@@ -51,11 +52,12 @@ body {
 
 
   .gray, .gold {
-    border-radius: 4em;
-    width: 50%;
-    max-width: 350px;
-    height: auto;
+    width: 100%;
+    max-width: 100%;
+    width: 50%;    
     margin-top: 2em;
+    border-radius:20px;
+	overflow: hidden;
 }
 
 
@@ -71,5 +73,14 @@ img {
     object-fit: cover;
     min-width: 360px;
     max-width: 370px;
+}
+
+@media (max-width: 768px) {
+    .product-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        padding: 4% 5%;
+        grid-gap: 1em;
+    }
 }
 
