@@ -18,7 +18,7 @@ body {
     grid-template-rows: 2fr 2fr;
     padding: 4% 5%;
     grid-gap: 4em;
-   
+
 
 }
 
@@ -54,7 +54,7 @@ body {
   .gray, .gold {
     width: 100%;
     max-width: 100%;
-    width: 50%;    
+    width: 50%;
     margin-top: 2em;
     border-radius:20px;
 	overflow: hidden;
@@ -82,5 +82,9 @@ img {
         padding: 4% 5%;
         grid-gap: 1em;
     }
+          .product-container :nth-child(3) {
+              grid-row: 4;
+          }
+
 }
 
