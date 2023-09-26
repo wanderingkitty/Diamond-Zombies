@@ -4,7 +4,7 @@
 	--bar-width: 60px; 
 	--bar-width: 32px;
 	--bar-height: 4px;
-	--bar-height: 6px;
+	--bar-height: 8px;
 	--hamburger-gap: 6px;
 	--foreground: #141413;
 	--background: black;
@@ -57,6 +57,7 @@ nav {
 	align-items: center;
 	height: 30px;
 }
+
 .logo-img {
 	position: absolute;
 	content: url(./resources/images/logo_black.svg);
@@ -173,7 +174,7 @@ nav {
 .hamburger-menu input {
 	content: "";
 	width: var(--bar-width);
-	height: 3px;
+	height: 5px;
 	height: var(--bar-height);
 	background-color: var(--foreground);
 	border-radius: 9999px;
@@ -211,3 +212,4 @@ nav {
 .hamburger-menu:has(input:checked) + .sidebar {
 	translate: 0;
 }
+
