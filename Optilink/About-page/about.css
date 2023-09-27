@@ -1,0 +1,198 @@
+body {
+
+	display: grid;
+	width: 100%;
+	margin: 0;
+	height: auto;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+	margin-bottom: 10%;
+}
+
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+main {
+	padding: 5% 10%;
+}
+
+.logo img {
+	width: 200px;
+	max-width: 100%;
+}
+
+.nav ul {
+	list-style: none;
+	display: flex;
+}
+
+.nav li {
+	margin-right: 40px;
+}
+
+.nav a {
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.nav {
+		margin-top: 10px;
+	}
+
+	.nav ul {
+		flex-direction: column;
+	}
+
+	.nav li {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+}
+
+
+
+/* OUR STORY */
+
+.story-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.story-text>h1 {
+	font-size: 2em;
+	color: #797A9E;
+}
+
+.story-text>p {
+	color: grey;
+}
+
+.story-image {
+	justify-self: right;
+	padding-right: 30px;
+}
+
+.story-image img {
+	object-fit: cover;
+	width: 350px;
+	height: auto;
+	border-radius: 10%;
+}
+
+.story>h1 {
+
+	text-align: left;
+	font-size: 50px;
+}
+
+/* --------  MEET THE TEAM -------------- */
+
+.team-container {
+	margin-top: 7%;
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 2fr;
+	justify-items: center;
+
+}
+
+
+.team-container>div {
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	padding-bottom: 30px;
+
+
+}
+
+.meet-title {
+
+	font-size: 60px;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	color: #797A9E;
+}
+
+.dev-profile {
+	position: relative;
+}
+
+.dev-profile img {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 10%;
+	position: relative;
+}
+
+
+@media only screen and (max-width:600px) {
+	.team-container {
+		grid-template-columns: 1fr;
+
+	}
+
+	.story-container {
+		grid-template-columns: 1fr;
+	}
+}
+
+
+/* Jag vill lägga till hover effect så att när man lägger musen ska de bli en mörk skugga på bilden (Svart med opacity 35%) samt en title på namnet */
+
+
+.overlay {
+	width: 300px;
+	height: 300px;
+	border-radius: 10%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #2727279b;
+}
+
+.dev-profile:hover .overlay {
+	opacity: 1;
+}
+
+.dev-name {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
