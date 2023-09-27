@@ -2,18 +2,19 @@ body {
 
 	display: grid;
 	width: 100%;
-	height: auto;
 	margin: 0;
+	height: auto;
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 section {
-	margin-bottom: 10%;
+	margin-bottom: 5%;
 }
 
 
-.header {
+header {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -43,7 +44,7 @@ section {
 }
 
 @media screen and (max-width: 768px) {
-	.header {
+	header {
 		flex-direction: column;
 		align-items: flex-start;
 	}
@@ -62,6 +63,42 @@ section {
 	}
 }
 
+
+
+/* OUR STORY */
+
+.story-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 4% 5%;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.story-text> h1 {
+	font-size: 2em;
+}
+.story-text > p{
+	color: grey;
+}
+.story-image{
+	justify-self: center;
+}
+
+.story-image img {
+	object-fit: cover;
+	width: 350px;
+	height: auto;
+	border-radius: 10%;
+}
+
+.story>h1 {
+
+	text-align: left;
+	font-size: 50px;
+}
+
 /* MEET THE TEAM */
 
 .team-container {
@@ -77,11 +114,11 @@ section {
 
 .team-container>div {
 	display: grid;
-	padding: 20px;
 	align-content: center;
 	justify-content: center;
 	width: 100%;
 	height: auto;
+	padding-bottom: 30px;
 
 }
 
@@ -98,50 +135,8 @@ section {
 	width: 300px;
 	height: 300px;
 	object-fit: cover;
+	border-radius: 10%;
 }
-
-
-
-/* OUR STORY */
-
-.story-container {
-	padding-top: 5%;
-	width: 100%;
-	height: auto;
-	display: grid;
-	grid-template-columns: 1fr 3fr 1fr;
-	justify-content: center;
-}
-
-.story {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	background-color: rgba(0, 0, 0, 0.016);
-	border-radius: 25px;
-	border: 1px solid rgba(102, 102, 102, 0.16);
-}
-
-.story>h1 {
-
-	text-align: left;
-	font-size: 50px;
-}
-
-
-hr {}
-
-.story :nth-child(2) {}
-
-
-
-.story {
-	text-align: left;
-	padding-left: 20px;
-	padding-right: 20px;
-
-}
-
-
 
 
 @media only screen and (max-width:600px) {
