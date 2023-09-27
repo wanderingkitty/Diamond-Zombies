@@ -1,0 +1,40 @@
+:root {
+	--top-bar-height: 50px;
+	--side-bar-width: 100px;
+}
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+	/* background-color:rgb(212, 212, 220); */
+}
+
+::-webkit-scrollbar {
+	background: transparent;
+	width: 0px;
+}
+.container {
+	color: rgb(244, 240, 240);
+}
+.sidebar {
+	position: fixed;
+	top: var(--top-bar-height);
+	width: var(--side-bar-width);
+	height: calc(100vh - var(--top-bar-height));
+	height: 100%;
+	background-color: rgb(57, 62, 57);
+}
+.topbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: var(--top-bar-height);
+	background-color: rgb(79, 74, 79);
+}
+.scrollable-content {
+	margin-top: var(--top-bar-height);
+	margin-left: var(--side-bar-width);
+	height: 100vh;
+	background-color: rgb(217, 217, 226);
+	color: black;
+}

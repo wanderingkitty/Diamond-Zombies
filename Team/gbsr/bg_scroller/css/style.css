@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;700&display=swap");
+
+:root {
+	background-color: #131313;
+	--color-background: ;
+}
+@keyframes anim {
+	from {
+		color: hotpink;
+	}
+	to {
+		color: lime;
+	}
+}
+
+body {
+	margin: unset;
+	/* background-color: #121212; */
+	font-family: "Outfit", sans-serif;
+	font-size: 22px;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.container {
+	background-color: var(--color-background);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 100vw;
+	height: 2000px;
+
+	align-items: center;
+	/* overflow: hidden; */
+}
+
+@keyframes animateBackground {
+	0% {
+		background-position: 0px 0px;
+	}
+	100% {
+		background-position: 3750px 0px;
+	}
+}
+
+.container__content {
+	animation: animateBackground 16s linear infinite;
+	/* animation-timeline: scroll(); */
+	padding: 20px;
+	height: 90%;
+	width: 380px;
+	border-radius: 8px;
+	background-color: rgb(75, 64, 84);
+	background-image: url("../resources/images/bg2.svg");
+
+	background-position-y: 100px;
+	box-shadow: 0px 0px 10px rgba(82, 71, 83, 0.523);
+}
+
+.card {
+	height: 480px;
+	backdrop-filter: blur(10px);
+	border-radius: 5px;
+	border: 1px #fefefe14 solid;
+
+	animation: anim linear;
+}
+
+.card__text-light {
+	padding: 10px;
+	color: rgb(214, 207, 207);
+	text-shadow: 0px 0px 10px rgba(189, 172, 172, 0.447);
+	text-align: center;
+}
+
+.card__text,
+.card__text-small {
+	text-shadow: 0px 0px 6px rgba(62, 59, 59, 0.476);
+	padding: 10px;
+	color: rgb(12, 12, 12);
+}
+
+.card__text-small {
+	font-size: 14px;
+	padding: 0px;
+	text-align: center;
+}
+
+.card__text-highlight {
+	font-size: 22px;
+	padding: 20px;
+	text-align: center;
+	color: #bbdf1e;
+}
+
+.card__text-link {
+	padding: 30px;
+	text-align: center;
+	color: rgb(100, 91, 184);
+}
+
+/* Scroll stuffs here */
