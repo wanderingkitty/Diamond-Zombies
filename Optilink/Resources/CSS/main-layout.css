@@ -12,15 +12,13 @@ body {
 /* --------- Main layout --------- */
 
 header {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 10px 20px;
 	/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
-	position: fixed;
-	top: 0;
-	width: clamp(25%, 100%, 100%);
-	height: var(--top-bar-height);
-	background-color: #ffffff;
+	z-index: 9999;
 }
 
 .logo img {
@@ -47,7 +45,7 @@ header {
 }
 
 /* menu */
-.nav ul {
+/* .nav ul {
 	list-style: none;
 	display: flex;
 }
@@ -60,14 +58,14 @@ header {
 	text-decoration: none;
 	color: #000000;
 	font-weight: bold;
-	font-size: clamp(0.6rem, 1.5vw, 1.2rem);
-}
+	font-size: clamp(1rem, 1.5vw, 1.2rem);
+} */
 
 /* --- End main layout --*/
 
 /* MOBILE RESPONSIVE HEADER  */
 /* Remove this and replace with new menu when done */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
 	.header {
 		flex-direction: column;
 		align-items: flex-start;
@@ -86,7 +84,7 @@ header {
 		margin-right: 0;
 		margin-bottom: 10px;
 	}
-}
+} */
 
 /* hide scrollbar */
 ::-webkit-scrollbar {
