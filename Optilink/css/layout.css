@@ -1,0 +1,153 @@
+:root {
+	--top-bar-height: 50px;
+	--side-bar-width: 100px;
+}
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+	/* background-color:rgb(212, 212, 220); */
+}
+
+
+/* --------- HEADER START --------- */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: var(--top-bar-height);
+	background-color: #FFFFFF;
+}
+
+
+.logo img {
+	width: 200px;
+	max-width: 100%;
+}
+
+.nav ul {
+	list-style: none;
+	display: flex;
+}
+
+.nav li {
+	margin-right: 40px;
+}
+
+.nav a {
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+}
+
+
+/* MOBILE RESPONSIVE HEADER  */
+/* @media screen and (max-width: 768px) {
+	.header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.nav {
+		margin-top: 10px;
+	}
+
+	.nav ul {
+		flex-direction: column;
+	}
+
+	.nav li {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+} */
+
+/* ------ HEADER END-------- */
+
+
+::-webkit-scrollbar {
+	background: transparent;
+	width: 0px;
+}
+.container {
+	/* color: rgb(244, 240, 240); */
+}
+.sidebar {
+	position: fixed;
+	top: var(--top-bar-height);
+	width: var(--side-bar-width);
+	height: calc(100vh - var(--top-bar-height));
+	height: 100%;
+	background-color: rgba(57, 62, 57, 0.071);
+}
+
+
+/* --- NO NEED FOR THIS CSS I THINK, I PUT IT IN THE HEADER ---- */
+
+/* .topbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: var(--top-bar-height);
+	background-color: rgb(79, 74, 79);
+} */
+
+.scrollable-content {
+	margin-top: var(--top-bar-height);
+	margin-left: var(--side-bar-width);
+	height: 100vh;
+	background-color: rgb(217, 217, 226);
+	color: black;
+}
+
+
+/* ----FOOTER ----- */
+footer {
+	background-color: #090909;
+	color: #fff;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.footer-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-content > ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footer-content > ul li {
+	display: inline;
+	margin-right: 20px;
+}
+
+.footer-content > ul li:last-child {
+	margin-right: 0;
+}
+
+.footer-content > ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer-content > p {
+	margin: 0;
+	font-size: 14px;
+}
