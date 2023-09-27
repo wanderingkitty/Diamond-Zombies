@@ -27,6 +27,9 @@ img {
     padding: 4% 5%;
     grid-gap: 4em;
 	font-size: 20px;
+    margin-left:15em;
+    margin-right: 15em;
+    max-width: 1200px; 
 }
 
 .eyes-images, .img1, .img2{
@@ -37,19 +40,18 @@ img {
 
 }
 
-.img1 {
-    height: 400px;
-    max-width: 600px;
-}
-
 .eye, .lense, .img1, .img2 {
 	
     max-width: 100%;
-    width: 50%;    
+    width: 70%;    
     margin-top: 2em;
 	border-radius:20px;
 	overflow: hidden;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.img1, .img2 {
+    margin-left: 4em;
 }
 
 .eye {
@@ -59,11 +61,23 @@ img {
 .product-info {
 	grid-column: 1;
 	grid-row: 1;
+    margin-left: 4em;
+    margin-top: 1em;
 }
 
 .product-info2 {
 	grid-column: 2;
 	grid-row: 2;
+    margin-right: 4em;
+    margin-top: 1em;
+}
+
+.description {
+    margin-right: 4em;
+}
+
+.product-description {
+    margin-right: 4em;
 }
 
 .lense {
@@ -72,13 +86,30 @@ img {
 }
 
 @media (max-width: 768px) {
-    .container {
+    .container, .waiting-list {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
         padding: 4% 5%;
         grid-gap: 1em;
     }
+
+    .eye, .lense, .img1, .img2 {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .product-info, .product-info2, .description, .product-description {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .button {
+        margin-top: 2em; 
+    }
 }
+
 
 button {
     display: flex;
