@@ -7,6 +7,10 @@ body {
     background-color: #e9e6e3;
   }
 
+  a {
+	text-decoration: none;
+  }
+
 .product-title {
 	text-align: left;
     margin-top: 2em;
@@ -42,11 +46,13 @@ body {
 .btn-row{
     display: flex;
     gap: 1em;
+	
 }
 
 .buy, .buy-pro{
     background-color: #BBBDF6;
     padding: 0.5em 1em;
+
 }
 
 .learn, .learn-pro{
@@ -54,6 +60,10 @@ body {
     padding: 0.5em 1em;
     color: white;
 
+}
+
+.learn-pro {
+	margin-left: 0.3em;
 }
 
 
