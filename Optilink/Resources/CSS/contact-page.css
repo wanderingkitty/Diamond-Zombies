@@ -1,36 +1,40 @@
 body {
-	box-sizing: border-box;
+	margin: 0;
+	padding-top: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
+	background-color: rgb(255, 255, 255);
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 .contact-container {
-	display: flex;
-	padding-top: 10%;
-	padding-right: clamp(2em, 2em, 8em);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	/* grid-template-rows: 2; */
+	padding: 0px;
 }
+/*
+.contact-header{
+	justify-items: center;
+	align-items: center;
+} */
 
 .contact-title {
 	letter-spacing: 10px;
-	font-size: clamp(1.2em, 4vw, 4em);
+	font-size: 4em;
+	text-align: right;
+	margin-right: 1em;
 }
 
-.address {
-	font-size: clamp(0.8em, 2vw, 2em);
-	padding-left: 10%;
+.adress {
 	text-align: right;
-	width: 80%;
-	min-width: 10em;
-	max-width: 80%;
-	text-align: right;
-	background-color: black;
 }
 
 .contact-form {
-	padding: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding: 10% 10% 10% 10%;
 	border-radius: 5px;
-	max-height: 85%;
-	box-sizing: border-box;
-	/* background-color: black; */
 	box-shadow: 0px 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -42,7 +46,7 @@ form {
 
 input,
 textarea {
-	width: 60%;
+	width: 100%;
 	padding: 10px;
 	border: 1px solid #ccc;
 	border-radius: 10px;
