@@ -16,7 +16,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 2fr;
-    padding: 4% 5%;
     grid-gap: 4em;
     margin-left: 6em;
     margin-right: 6em;

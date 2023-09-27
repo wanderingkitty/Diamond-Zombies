@@ -46,7 +46,7 @@ body {
 .btn-row{
     display: flex;
     gap: 1em;
-	
+
 }
 
 .buy, .buy-pro{
