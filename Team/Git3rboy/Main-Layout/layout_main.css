@@ -107,9 +107,11 @@ header {
 }
 
 
-/* ----FOOTER ----- */
+
+/* ---- FOOTER --- */
+
 footer {
-	background-color: #090909;
+	background-color: #1d1d1d;
 	color: #fff;
 	padding: 20px 0;
 	text-align: center;
@@ -127,27 +129,27 @@ footer {
 	align-items: center;
 }
 
-.footer-content > ul {
+.footer-content>ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
-.footer-content > ul li {
+.footer-content>ul li {
 	display: inline;
 	margin-right: 20px;
 }
 
-.footer-content > ul li:last-child {
+.footer-content>ul li:last-child {
 	margin-right: 0;
 }
 
-.footer-content > ul li a {
+.footer-content>ul li a {
 	color: #fff;
 	text-decoration: none;
 }
 
-.footer-content > p {
+.footer-content>p {
 	margin: 0;
 	font-size: 14px;
 }
