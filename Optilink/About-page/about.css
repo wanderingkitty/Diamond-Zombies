@@ -1,5 +1,4 @@
 body {
-
 	display: grid;
 	width: 100%;
 	margin: 0;
@@ -12,7 +11,6 @@ section {
 	margin-bottom: 10%;
 }
 
-
 header {
 	width: 100%;
 	display: flex;
@@ -20,8 +18,8 @@ header {
 	align-items: center;
 	padding: 10px 20px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	z-index: 9999;
 }
-
 
 main {
 	padding: 5% 10%;
@@ -67,8 +65,6 @@ main {
 	}
 }
 
-
-
 /* OUR STORY */
 
 .story-container {
@@ -76,15 +72,14 @@ main {
 	grid-template-columns: 1fr 1fr;
 	justify-content: center;
 	align-items: center;
-
 }
 
-.story-text>h1 {
+.story-text > h1 {
 	font-size: 2em;
-	color: #797A9E;
+	color: #797a9e;
 }
 
-.story-text>p {
+.story-text > p {
 	color: grey;
 }
 
@@ -100,8 +95,7 @@ main {
 	border-radius: 10%;
 }
 
-.story>h1 {
-
+.story > h1 {
 	text-align: left;
 	font-size: 50px;
 }
@@ -115,28 +109,23 @@ main {
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 2fr;
 	justify-items: center;
-
 }
 
-
-.team-container>div {
+.team-container > div {
 	display: grid;
 	align-content: center;
 	justify-content: center;
 	width: 100%;
 	height: auto;
 	padding-bottom: 30px;
-
-
 }
 
 .meet-title {
-
 	font-size: 60px;
 	font-weight: bold;
 	text-align: center;
 	width: 100%;
-	color: #797A9E;
+	color: #797a9e;
 }
 
 .dev-profile {
@@ -151,11 +140,9 @@ main {
 	position: relative;
 }
 
-
-@media only screen and (max-width:600px) {
+@media only screen and (max-width: 600px) {
 	.team-container {
 		grid-template-columns: 1fr;
-
 	}
 
 	.story-container {
@@ -163,9 +150,7 @@ main {
 	}
 }
 
-
 /* Jag vill lägga till hover effect så att när man lägger musen ska de bli en mörk skugga på bilden (Svart med opacity 35%) samt en title på namnet */
-
 
 .overlay {
 	width: 300px;
@@ -177,7 +162,7 @@ main {
 	left: 0;
 	right: 0;
 	opacity: 0;
-	transition: .5s ease;
+	transition: 0.5s ease;
 	background-color: #2727279b;
 }
 
