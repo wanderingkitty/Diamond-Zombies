@@ -13,7 +13,6 @@ a {
 
 .spacer {
 	height: 80px;
-	/* width: 100vw; */
 }
 
 .container {
@@ -47,7 +46,7 @@ a {
 
 .col-span {
 	flex-basis: 100%;
-	width: 100%; /* Add this line */
+	width: 100%;
 	padding: 0 1em;
 }
 
@@ -174,23 +173,45 @@ a {
 	}
 }
 
-button {
+button,
+.buy,
+.buy-pro,
+.learn,
+.learn-pro {
 	display: flex;
 	gap: 1em;
 	width: 15em;
-	height: 1em;
-	grid-column: 2;
-	grid-row: 1;
-	background-color: #bbbdf6;
+	/* height: 1em; */
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	color: black;
 	border-radius: 10px;
+	padding: 0.5em 1em;
+}
+
+button {
+	grid-column: 2;
+	grid-row: 1;
+	background-color: #bbbdf6;
+	color: black;
 	margin-top: 4em;
-	padding: 3em;
 	font-size: 19px;
 	border: none;
+}
+
+.buy,
+.buy-pro {
+	background-color: #bbbdf6;
+}
+
+.learn,
+.learn-pro {
+	background-color: #72727e;
+	color: white;
+}
+
+.learn-pro {
+	margin-left: 0.3em;
 }
 
 button:hover,
@@ -200,23 +221,6 @@ button:hover,
 .learn-pro:hover {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 10);
 	cursor: pointer;
-}
-
-.buy,
-.buy-pro {
-	background-color: #bbbdf6;
-	padding: 0.5em 1em;
-}
-
-.learn,
-.learn-pro {
-	background-color: #72727e;
-	padding: 0.5em 1em;
-	color: white;
-}
-
-.learn-pro {
-	margin-left: 0.3em;
 }
 
 .gray,
