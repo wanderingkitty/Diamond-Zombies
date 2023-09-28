@@ -6,8 +6,8 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
 		<title>OptiLink</title>
-		<link rel="stylesheet" href="Resources/CSS/landing-page.css">
 		<link rel="stylesheet" href="Resources/CSS/main-layout.css">
+		<link rel="stylesheet" href="Landing-Page/landing-page.css">
 		<link rel="stylesheet" href="Resources/CSS/nav-menu.css">
 		<link
 			href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&amp;family=Titillium+Web:wght@300&amp;display=swap"
@@ -17,29 +17,31 @@
 
 
 	<header>
-		<div class="logo">
-			<img
-				src="Resources/Images/Logo/logo_black.svg"
-				alt="Logo" />
-		</div>
-		<nav class="nav">
-			<ul>
-				<li><a href="Product-page/product-page.html">Product</a></li>
-				<li><a href="About-page/about.html">About</a></li>
-				<li>
-					<a href="Contact/contact.html">Contact</a>
-				</li>
-			</ul>
-		</nav>
+	
 	</header>
 
 	<main>
 
 		<div class="container">
 			<div class="sidebar"></div>
-			<div class="topbar"></div>
+			<div class="topbar">
+				<header><div class="logo">
+					<img
+						src="Resources/Images/Logo/logo_black.svg"
+						alt="Logo" />
+				</div>
+				<nav class="nav">
+					<ul>
+						<li><a href="Product-page/product-page.html">Product</a></li>
+						<li><a href="About-page/about.html">About</a></li>
+						<li>
+							<a href="Contact/Contact.html">Contact</a>
+						</li>
+					</ul>
+				</nav></header>
+			</div>
 			<div class="scrollable-content">
-				<section class="header">
+				<section class="intro">
 					<h1>
 						Welcome to Optilink.<br />
 						Next Generation Eyes
@@ -59,7 +61,7 @@
 					<section class="product-container">
 						<div class="product-image" id="product-section">
 							<img class="gray"
-								src="https://trello.com/1/cards/650ad65bf6a54ff223496be5/attachments/650ad67034adba4360abfefc/previews/650ad67134adba4360ac00d8/download/image.png"
+								src="Resources/Images/Product-page/product-image.png"
 								alt="">
 						</div>
 
@@ -91,14 +93,13 @@
 
 						<div class="product-image">
 							<img class="gray"
-								src="https://trello.com/1/cards/650ad65bf6a54ff223496be5/attachments/650ad67034adba4360abfefc/previews/650ad67134adba4360ac00d8/download/image.png"
+								src="Resources/Images/Product-page/product-image.png"
 								alt="">
 						</div>
 					</section>
 	</main>
 </body>
 
-<!-- Ignore this until proper footer is here -->
 		<footer>
 			<div class="footer-container">
 				<div class="footer-content">
@@ -107,7 +108,7 @@
 						<li><a href="Index.html">Home</a></li>
 						<li><a href="About-page/about.html">About</a></li>
 						<li><a href="#">Services</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="Contact/contact.html">Contact</a></li>
 					</ul>
 				</div>
 			</div>

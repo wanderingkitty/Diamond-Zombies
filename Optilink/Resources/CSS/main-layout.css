@@ -27,7 +27,7 @@ header {
 
 .logo img {
 	padding-left: var(--side-bar-width);
-	width: 200px;
+	width: 300px;
 	max-width: 100%;
 	min-width: 180px;
 }
