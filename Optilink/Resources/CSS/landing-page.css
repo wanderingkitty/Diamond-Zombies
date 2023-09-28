@@ -30,7 +30,11 @@ main{
 	align-self: center;
 	font-size: 6em;
 	text-align: center;
-	/* margin-top: -12em; */
+ }
+
+.title > span {
+		padding-left: 0.3em;
+		color: #797a9e;
 }
 
 /* .sidebar {
@@ -349,7 +353,7 @@ main{
 }
 
 .social-title > span{
-
+	padding-left: 0.3em;
 	color: #797a9e;
 }
 
