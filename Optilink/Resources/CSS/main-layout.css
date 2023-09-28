@@ -21,7 +21,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px 20px;
-	/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	z-index: 9999;
 }
 
@@ -94,51 +94,4 @@ header {
 ::-webkit-scrollbar {
 	background: transparent;
 	width: 0px;
-}
-
-/* ---- FOOTER --- */
-
-footer {
-	margin-top: calc(100vh - var(--top-bar-height));
-	background-color: #090909;
-	color: #fff;
-	padding: 20px 0;
-	text-align: center;
-}
-
-.footer-container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 20px;
-}
-
-.footer-content {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.footer-content > ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-.footer-content > ul li {
-	display: inline;
-	margin-right: 20px;
-}
-
-.footer-content > ul li:last-child {
-	margin-right: 0;
-}
-
-.footer-content > ul li a {
-	color: #fff;
-	text-decoration: none;
-}
-
-.footer-content > p {
-	margin: 0;
-	font-size: 14px;
 }
