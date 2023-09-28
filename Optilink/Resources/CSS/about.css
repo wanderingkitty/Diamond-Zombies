@@ -11,37 +11,8 @@ section {
 	margin-bottom: 10%;
 }
 
-header {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px 20px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-main {
-	padding: 5% 10%;
-}
-
-.logo img {
-	width: 200px;
-	max-width: 100%;
-}
-
-.nav ul {
-	list-style: none;
-	display: flex;
-}
-
-.nav li {
-	margin-right: 40px;
-}
-
-.nav a {
-	text-decoration: none;
-	color: #000000;
-	font-weight: bold;
+main{
+	padding: 10% 5%;
 }
 
 @media screen and (max-width: 768px) {
