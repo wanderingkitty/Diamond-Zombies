@@ -10,7 +10,7 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+.footer-container{
     max-width: 1170px;
     margin: auto;
     background-color: rgb(15, 15, 15);
@@ -32,7 +32,7 @@ ul{
     flex-direction: row;
 }
 
-.footer {
+footer {
     background-color: rgb(15, 15, 15);
     padding: 70px 0;
 }

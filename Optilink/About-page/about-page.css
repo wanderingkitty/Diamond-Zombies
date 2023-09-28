@@ -2,13 +2,13 @@ body {
 	display: grid;
 	width: 100%;
 	margin: 0;
-	height: auto;
+	height: unset;
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 section {
-	margin-bottom: 10%;
+	margin-bottom: 30px;
 }
 
 header {
@@ -91,7 +91,7 @@ main {
 .story-image img {
 	object-fit: cover;
 	width: 350px;
-	height: auto;
+	height: 350px;
 	border-radius: 10%;
 }
 
@@ -107,7 +107,7 @@ main {
 	display: grid;
 	width: 100%;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 2fr;
+	grid-template-rows: 2;
 	justify-items: center;
 }
 
@@ -116,7 +116,6 @@ main {
 	align-content: center;
 	justify-content: center;
 	width: 100%;
-	height: auto;
 	padding-bottom: 30px;
 }
 
