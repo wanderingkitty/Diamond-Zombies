@@ -5,24 +5,20 @@ body {
 	font-weight: 300;
 }
 
-main{
-	padding: 4% 10% 0 10%;
-}
 
-/* img {
+img {
 	max-width: 80%;
 	min-width: 375px;
 	height: auto;
 	display: flex;
 	margin: 0 auto;
-} */
+}
 
 
 .intro {
 	height: 80vh;
 	display: flex;
 	justify-content: center;
-	flex-grow: 1;
 }
 
 
@@ -163,17 +159,22 @@ main{
 	border-top: 20px solid rgb(140, 137, 137);
 }
 
-/* ---- PRODUCTS ----*/
+/*Product-page*/
+.product-title {
+	text-align: left;
+	margin-top: 2em;
+}
 
 .product-container {
 	display: grid;
-	justify-content: center;
-	align-items: center;
-	grid-gap: 1em;
-	height: auto;
-	margin-bottom: 8em;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 2fr 2fr;
+	padding: 4% 10% 0 10%;
+	grid-gap: 4em;
+	height: 100vh;
 }
 
+<<<<<<< HEAD
 
 .product-row{
 	display: grid;
@@ -197,32 +198,12 @@ main{
 	align-items: left; */
 
 
+=======
+>>>>>>> parent of 828a532 (Did changes on Landing page, added sign up form for newsletter and instagram feed)
 .product-image {
 	display: flex;
+	justify-content: center;
 	width: 100%;
-}
-/*
-.product-image :nth-child(1) {
-	display: flex;
-	justify-content: right;
-
-} */
-
-.product-image > img{
-		max-width: 375px;
-		min-width: 375px;
-		height: auto;
-		display: flex;
-}
-
-.product-title {
-	text-align: left;
-	padding-bottom: 10px;
-}
-
-.product-copy{
-	padding-bottom: 1.5em;
-	width: 85%;
 }
 
 .btn-row {
@@ -234,8 +215,11 @@ main{
 .buy-pro {
 	background-color: #bbbdf6;
 	padding: 0.5em 1em;
+<<<<<<< HEAD
 	border-radius: 8px;
 	box-shadow: 0 4px 20px #797a9eb3;
+=======
+>>>>>>> parent of 828a532 (Did changes on Landing page, added sign up form for newsletter and instagram feed)
 }
 
 .learn,
@@ -243,15 +227,22 @@ main{
 	background-color: #72727e;
 	padding: 0.5em 1em;
 	color: white;
+<<<<<<< HEAD
 	border-radius: 12px;
 	box-shadow: 0 4px 20px #797a9eb3;
 
+=======
+>>>>>>> parent of 828a532 (Did changes on Landing page, added sign up form for newsletter and instagram feed)
 }
 
+.gray:hover,
+.gold:hover {
+	box-shadow: 0 0 50px rgba(0, 0, 0, 15);
+	cursor: pointer;
+}
 
 .gray,
 .gold {
-	box-shadow: 0 0 50px rgba(0, 0, 0, 15);
 	border-radius: 4em;
 	width: 50%;
 	max-width: 350px;
@@ -266,6 +257,7 @@ main{
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+<<<<<<< HEAD
 
 .newsletter{
 
@@ -365,12 +357,27 @@ main{
 	flex-wrap: nowrap;
 	gap: 10px;
 
+=======
+.btn-row {
+	grid-gap: 1em;
 }
 
+img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	min-width: 360px;
+	max-width: 370px;
+>>>>>>> parent of 828a532 (Did changes on Landing page, added sign up form for newsletter and instagram feed)
+}
 
-.insta-post{
-	width: 25%
+/* .container__bg {
+	width: 100%;
+	height: 100%;
 
+} */
+
+<<<<<<< HEAD
 }
 
 .insta-post > img{
@@ -378,3 +385,6 @@ main{
 	object-fit: contain;
 
 }
+=======
+/* end back ground stuffs */
+>>>>>>> parent of 828a532 (Did changes on Landing page, added sign up form for newsletter and instagram feed)
