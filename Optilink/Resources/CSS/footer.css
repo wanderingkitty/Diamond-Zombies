@@ -1,35 +1,32 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-
-body {
-	line-height: 1.5;
-	font-family: "Poppins", sans-serif;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-.container {
-	max-width: 1170px;
-	margin: auto;
-	background-color: rgb(15, 15, 15);
-}
-
-.footer-col img {
-	width: 200px;
-	height: auto;
-}
-
-ul {
-	list-style: none;
-}
+/* html{ 
+ font-family: "Titillium Web", sans-serif;
+} */
 
 
-footer {
-	background-color: rgb(15, 15, 15);
-	padding: 70px 0;
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+    background-color: rgb(15, 15, 15);
+}
+
+.footer-col > img {
+width: 80px;
+height: auto;
+}
+ul{
+    list-style: none;
+}
+
 
 .row {
     display: flex;
@@ -37,60 +34,58 @@ footer {
     flex-direction: row;
 }
 
-.footer-col {
-	width: 25%;
-	padding: 0 15px;
-	text-align: right;
+.footer {
+    background-color: rgb(15, 15, 15);
+    padding: 70px 0;
 }
 
-/* .footer-col :nth-child(1) {
-    align-items: ;
-} */
-
-.footer-col h4 {
-	font-size: 18px;
-	/* color: rgb(182, 40, 40); */
-	color: #bbbdf6; /* same color as the buttons, should probably set these up in main-layout as variables? */
-	text-transform: capitalize;
-	margin-bottom: 45px;
-	font-weight: 500;
-	position: relative;
-	text-align: right;
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+    text-align: right;
 }
 
-.footer-col h4::before {
-	content: "";
-	position: absolute;
-	right: 0;
-	bottom: -10px;
-	/* background-color: #e91e63; */
-	background-color: #bbbdf6;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
+.footer-col h4{
+font-size: 18px;
+color: rgb(182, 40, 40);
+text-transform: capitalize;
+margin-bottom: 45px;
+font-weight: 500;
+position: relative;
+text-align: right;
 }
 
-.footer-col ul li:not(:last-child) {
-	margin-bottom: 10px;
-}
-.footer-col ul li a {
-	font-size: 16px;
-	text-transform: capitalize;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #bbbbbb;
-	text-align: right;
-	display: block;
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
 }
 
-/* 
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    text-align: right;  
+    display: block;
+}
+
+
 @media (max-width: 800px) {
-    .row > div{
+    .row {
         display: grid;
-        grid-template-rows: repeat(1fr);
+        grid-template-columns: repeat(1fr, 4);
         justify-content: center;
-        background-color: rgb(85, 5, 139);
-
+        
     }
-} */
+}
