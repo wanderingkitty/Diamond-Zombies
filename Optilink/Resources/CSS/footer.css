@@ -25,15 +25,16 @@ ul {
 	list-style: none;
 }
 
-.row {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-}
 
 footer {
 	background-color: rgb(15, 15, 15);
 	padding: 70px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .footer-col {
@@ -82,3 +83,14 @@ footer {
 	text-align: right;
 	display: block;
 }
+
+/* 
+@media (max-width: 800px) {
+    .row > div{
+        display: grid;
+        grid-template-rows: repeat(1fr);
+        justify-content: center;
+        background-color: rgb(85, 5, 139);
+
+    }
+} */
