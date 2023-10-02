@@ -320,6 +320,10 @@ main {
 
 }
 
+.subscribe__title{
+	padding-top: 30px;
+}
+
 .notice{
 	padding: 0 10% 10% 10%;
 	font-size: 12px;
