@@ -69,6 +69,11 @@ nav {
 }
 
 @media only screen and (max-width: 950px) {
+
+	/* body{
+			max-width: max-content;
+} */
+
 	.menu {
 		flex-direction: column;
 		background-color: #ffffff;
@@ -98,4 +103,5 @@ nav {
 		font-size: 28px;
 		cursor: pointer;
 	}
+
 }
