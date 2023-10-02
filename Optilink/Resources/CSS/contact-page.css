@@ -19,17 +19,13 @@ body {
 main{
 	padding: 5% 10%;
 	height: 80vh;
+
 }
 
 .contact-title {
 	letter-spacing: 10px;
 	font-size: 4em;
-	text-align: right;
-	margin-right: 1em;
-}
-
-.adress {
-	text-align: right;
+	text-align: center;
 }
 
 .contact-form {
