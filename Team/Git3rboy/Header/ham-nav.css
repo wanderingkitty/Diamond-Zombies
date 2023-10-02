@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: sans-serif;
 	text-decoration: none;
 	list-style: none;
 }
@@ -11,7 +12,7 @@
 	top: 0;
 	width: 100%;
 	box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
-	background-color: #ffffff;
+	background-color: #151418;
 	z-index: 1;
 }
 
@@ -25,7 +26,7 @@ nav {
 .logo a {
 	font-size: 24px;
 	font-weight: bold;
-	color: #000000;
+	color: #fff;
 }
 
 .logo a span {
@@ -44,7 +45,7 @@ nav {
 	font-size: 17px;
 	font-weight: 500;
 	transition: 0.2s all ease-in-out;
-	color: #000000;
+	color: #fff;
 }
 
 .menu:hover a {
@@ -71,7 +72,7 @@ nav {
 @media only screen and (max-width: 950px) {
 	.menu {
 		flex-direction: column;
-		background-color: #ffffff;
+		background-color: #151418;
 		align-items: start;
 		position: absolute;
 		top: 70px;
@@ -94,7 +95,7 @@ nav {
 
 	.menu-icon {
 		display: block;
-		color: #000000;
+		color: #fff;
 		font-size: 28px;
 		cursor: pointer;
 	}

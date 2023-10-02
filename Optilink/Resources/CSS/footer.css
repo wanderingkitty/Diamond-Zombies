@@ -80,12 +80,18 @@ text-align: right;
     display: block;
 }
 
+.footer > img{
+    max-width: 90px;
+}
+
 
 @media (max-width: 800px) {
     .row {
         display: grid;
         grid-template-rows: repeat(1fr, 4);
         justify-content: center;
+        width: 100%;
+        flex-grow: 1;
 
     }
 }
