@@ -17,7 +17,7 @@ img {
 
     .img2 > img {
     max-width: 375px;
-    min-width: 375px;
+    min-width: 295px;
     }
 
 .section1, .waiting-list{
@@ -44,9 +44,9 @@ img {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-.img1, .img2 {
+/* .img1, .img2 {
     margin-left: 4em;
-}
+} */
 
 .eye {
 	height: 400px;
@@ -123,6 +123,7 @@ img {
    
     }
 }
+
 
 
 
