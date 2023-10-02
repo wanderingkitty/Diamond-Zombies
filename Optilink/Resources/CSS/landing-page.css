@@ -130,7 +130,7 @@ main {
 
 .product-image>img {
 	max-width: 375px;
-	min-width: 375px;
+	min-width: 295px;
 	height: auto;
 	display: flex;
 }
@@ -174,7 +174,6 @@ main {
 	box-shadow: 0 0 50px rgba(0, 0, 0, 15);
 	border-radius: 4em;
 	width: 50%;
-	max-width: 350px;
 	height: auto;
 	margin-top: 2em;
 }
@@ -266,7 +265,6 @@ main {
 .social-title {
 	display: flex;
 	justify-content: center;
-	margin: 2em;
 
 }
 
@@ -299,18 +297,41 @@ main {
 
 @media only screen and (max-width: 950px) {
 
+	html, body {
+			overflow-x: hidden;
+		}
+
+		body {
+			position: relative
+		}
+
 
 .intro {
 
 		font-size: 12px;
-		max-width: max-content;
+		max-width: min-content;
 	}
+
+
 
 .product-container > div{
 	display: flex;
 	flex-direction: column;
 	grid-template-columns: 1fr;
-	justify-content: center;
+}
+
+.product-row-pro>div * {
+	align-self: right;
+	text-align: right;
+}
+
+.btn-row {
+	align-self: center;
+	text-align: center;
+}
+
+.gray {
+	width: 10px;
 }
 
 
