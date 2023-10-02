@@ -88,7 +88,7 @@ body {
     margin-left: 4em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 320px) {
     .container1, .waiting-list {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -100,10 +100,51 @@ body {
 
     .eye, .lense, .img1, .img2 {
         width: 100%;
-        max-width: none;
-        margin:1em 0;
-   
+        margin: 0 auto; /* Center the .eye element */
+        margin-bottom: 1em; /* Add spacing between elements */
     }
+
+    .product-info, .product-info2, .description, .product-description {
+        margin: 0;
+    }
+
+    button {
+        width: 100%;
+        max-width: none;
+        margin-top: 1em;
+    }
+
+    .text1, .text2 {
+        margin: 0;
+        text-align: center; /* Center-align text within .text1 and .text2 */
+    }
+
+    .text2 {
+        grid-row: 4;
+    }
+
+    .gray, .gold {
+        width: 100%; /* Make .gray and .gold full-width on smaller screens */
+        margin-top: 2em;
+        margin-bottom: 1em; /* Add spacing between elements */
+    }
+
+    .btn-row {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center-align buttons */
+    }
+
+    .buy, .buy-pro, .learn, .learn-pro {
+        width: auto;
+        margin: 0.5em auto; /* Center-align and add spacing between buttons */
+    }
+    
+    .product-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 
     .product-info, .product-info2, .description, .product-description {
    margin: 0;
@@ -114,7 +155,7 @@ body {
         max-width: none;
         margin-top: 1em; 
     }
-}
+
 
 
 button {
@@ -142,19 +183,15 @@ button:hover {
     cursor: pointer;
 }
 
-.text1 {
-    margin-right: 10em;
+.text1, .text2 {
+    /* margin-right: 10em;
 	margin-top: 5em;
-    font-size: 1em;
+    font-size: 1em; */
+    text-align: center;
+    margin: 0;
 
 }
 
-.text2 {
-    margin-left: 10em;
-	margin-top: 5em;
-    font-size: 1em;
-
-}
 
 .product-image{
     display: flex;
@@ -165,6 +202,8 @@ button:hover {
 
 .btn-row{
     display: flex;
+    flex-direction: column;
+    align-items:center;
     gap: 1em;
 
 }
@@ -172,7 +211,8 @@ button:hover {
 .buy, .buy-pro{
     background-color: #BBBDF6;
     padding: 0.5em 1em;
-
+    width: auto;
+    margin: 0.5em auto;
 }
 
 .learn, .learn-pro{
@@ -188,7 +228,8 @@ button:hover {
 
 
   .gray, .gold {
-    width: 50%;
+    width: 100%;
+    margin-top: 2em;
     margin-top: 2em;
     border-radius:20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -203,7 +244,7 @@ cursor: pointer;
 
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .product-container {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
@@ -221,4 +262,4 @@ cursor: pointer;
             margin: 0;
           }
 
-}
+} */
