@@ -16,6 +16,8 @@ html,body {
 /* STYLES SPECIFIC TO FOOTER  */
 
 .footer {
+	display: flex;
+	justify-items: center;
 	width: 100%;
 	position: relative;
 	height: auto;

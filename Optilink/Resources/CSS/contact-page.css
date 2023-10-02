@@ -6,7 +6,7 @@ body {
 
 .contact-container {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	/* grid-template-rows: 2; */
 }
 /*
@@ -26,6 +26,9 @@ main{
 	letter-spacing: 10px;
 	font-size: 4em;
 	text-align: center;
+	padding-bottom: 1em;
+	color: #797a9e;
+	text-shadow: .1em .1em 0 hsla(199, 14%, 74%, 0.57);
 }
 
 .contact-form {
