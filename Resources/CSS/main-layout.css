@@ -1,7 +1,6 @@
-
-
 html {
 	scroll-behavior: smooth;
+	font-family: "Titillium Web", sans-serif;
 }
 
 body {
@@ -92,4 +91,3 @@ body {
 	background: transparent;
 	width: 0px;
 }
-

@@ -1,8 +1,8 @@
-body {
+/* body {
 	margin: 0;
 	background-color: rgb(255, 255, 255);
 	font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 .contact-container {
 	display: grid;
@@ -15,11 +15,9 @@ body {
 	align-items: center;
 } */
 
-
-main{
+main {
 	padding: 5% 10%;
 	height: 80vh;
-
 }
 
 .contact-title {
@@ -28,7 +26,7 @@ main{
 	text-align: center;
 	padding-bottom: 1em;
 	color: #797a9e;
-	text-shadow: .1em .1em 0 hsla(199, 14%, 74%, 0.57);
+	text-shadow: 0.1em 0.1em 0 hsla(199, 14%, 74%, 0.57);
 }
 
 .contact-form {
