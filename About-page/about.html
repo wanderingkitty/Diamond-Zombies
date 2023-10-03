@@ -8,15 +8,17 @@
 		<title>Document</title>
 		<link
 			rel="stylesheet"
-			href="/Resources/CSS/about.css" />
+			href="../Resources/CSS/about.css" />
 		<link
 			rel="stylesheet"
-			href="/Resources/CSS/main-layout.css" />
+			href="../Resources/CSS/main-layout.css" />
 		<link
 			rel="stylesheet"
-			href="/Resources/CSS/nav-menu.css" />
+			href="../Resources/CSS/nav-menu.css" />
 
-		<link rel="stylesheet" href="/Resources/CSS/footer.css" />
+		<link
+			rel="stylesheet"
+			href="../Resources/CSS/footer.css" />
 	</head>
 
 	<body>
@@ -25,11 +27,21 @@
 				<div class="logo">
 					<a href="index.html">OptiLink</a>
 				</div>
-				<input type="checkbox" id="menu-toggle">
-				<label for="menu-toggle" class="menu-icon">&#9776;</label>
+				<input
+					type="checkbox"
+					id="menu-toggle" />
+				<label
+					for="menu-toggle"
+					class="menu-icon"
+					>&#9776;</label
+				>
 				<ul class="menu">
 					<li><a href="Optilink/Index.html">Home</a></li>
-					<li><a href="Optilink/Product-page/product-page.html">Product</a></li>
+					<li>
+						<a href="Optilink/Product-page/product-page.html"
+							>Product</a
+						>
+					</li>
 					<li><a href="Optilink/About-page/about.html">About</a></li>
 					<li><a href="Optilink/Contact/contact.html">Contact</a></li>
 				</ul>
@@ -40,14 +52,14 @@
 			<section class="story-container">
 				<div class="story-text">
 					<h1>OUR STORY</h1>
-					<hr/><br>
+					<hr />
+					<br />
 					<p>
 						Once upon a time at NBI School of Tech, five wannabe
 						frontend developers - Alina, Jacob, Liam, Fredrik, and
 						Anders - embarked on a final project. Their idea? Smart
-						lenses they named "OptiLink." It was a blend of
-						fashion, AI, and tech, but they had no idea what they
-						were doing.
+						lenses they named "OptiLink." It was a blend of fashion,
+						AI, and tech, but they had no idea what they were doing.
 						<br />
 						<br />
 						In their cluttered discord chat, they built these lenses
@@ -88,24 +100,21 @@
 				</div>
 
 				<div class="dev-profile">
-					<img
-						src="liam bils.png" />
+					<img src="liam bils.png" />
 					<div class="overlay">
 						<div class="dev-name">Liam Bard</div>
 					</div>
 				</div>
 
 				<div class="dev-profile">
-					<img
-						src="fredrik bild.jpg" />
+					<img src="fredrik bild.jpg" />
 					<div class="overlay">
 						<div class="dev-name">Fredrik Eriksson</div>
 					</div>
 				</div>
 
 				<div class="dev-profile">
-					<img
-						src="Ander_Hofsten.jpg" />
+					<img src="Ander_Hofsten.jpg" />
 					<div class="overlay">
 						<div class="dev-name">Anders Hofsten</div>
 					</div>
@@ -113,43 +122,52 @@
 			</section>
 		</main>
 
-			<footer>
-				<div class="footer-container">
-					<div class="row">
-
-						<div class="footer-col">
-							<ul>
-								<img src="/Resources/Images/Logo/logo_white.svg">
-
-							</ul>
-						</div>
-
-						<div class="footer-col">
-							<h4>Links</h4>
-							<ul>
-								<li><a href="#">About</a></a></li>
-								<li><a href="#">Product</a></a></li>
-								<li><a href="#">Contact</a></a></li>
-							</ul>
-						</div>
-
-						<div class="footer-col">
-							<h4>Follow Us</h4>
-							<ul>
-								<li><a href="#">Facebook</a></li>
-								<li><a href="#">Instagram</a></li>
-								<li><a href="#">LinkIn</a></li>
-							</ul>
-						</div>
-
-						<div class="footer-col">
-							<h4>Find us</h4>
-							<ul>
-								<li><a href="#">OptiLink HQ</a></li>
-								<li><a href="#">Long Street 1</a></li>
-								<li><a href="#">133 37, London</a></li>
-							</ul>
-						</div>
-			</footer>
+		<footer>
+			<div class="footer">
+				<div class="contain">
+					<div class="col">
+						<h1>Links</h1>
+						<ul>
+							<li>About</li>
+							<li>Product</li>
+							<li>Contact</li>
+						</ul>
+					</div>
+					<div class="col">
+						<h1>Legal</h1>
+						<ul>
+							<li>Privacy Policy</li>
+							<li>Terms of Use</li>
+							<li>Site map</li>
+						</ul>
+					</div>
+					<div class="col">
+						<h1>Find Us</h1>
+						<ul>
+							<li>Optilink HQ</li>
+							<li>Long Street 1</li>
+							<li>133 37, London</li>
+						</ul>
+					</div>
+					<div class="col social">
+						<h1>Social</h1>
+						<ul>
+							<li>
+								<img
+									src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png"
+									width="32"
+									style="width: 32px" />
+							</li>
+							<li>
+								<img
+									src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+									width="32"
+									style="width: 32px" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
