@@ -1,0 +1,30 @@
+.instagram-container{
+	background-color: darkgoldenrod;
+	height: 400px;
+	
+
+}
+
+.social-title {
+	font-size: 2em;
+	font-weight: 100;
+	letter-spacing: 5px;
+
+}
+
+.insta-grid {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(100px, 293px));
+	gap: 20px;
+	justify-content: space-around;
+
+}
+
+.insta-post{
+	grid-gap: 20px;
+
+}
+
+.insta-post img{
+	max-width: 300px;
+}
